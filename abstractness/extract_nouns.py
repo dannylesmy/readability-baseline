@@ -36,7 +36,7 @@ def preprocess_parallel(texts, chunksize=100):
 
 
 if __name__ == '__main__':  
-	df = pd.read_feather(r"C:\Users\danny\OneDrive\Desktop\SERVER\lemmatize_item7_from_2002.feather")
+	df = pd.read_feather(r"FILE.feather")
 	df["lemma"] = df.lemma.apply(lambda x: remove_short(x))
 	df["nouns"] = preprocess_parallel(df['lemma'], chunksize=500)
 	df.to_feather("item7_lemma_nouns.feather")
