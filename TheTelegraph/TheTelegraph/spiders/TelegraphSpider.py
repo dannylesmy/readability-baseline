@@ -1,3 +1,6 @@
+# not working anymore. The newspaper change its policy and now one need to pay for downloading the archive (2022)
+
+
 import scrapy, string, re
 from TheTelegraph.items import ThetelegraphItem
 
