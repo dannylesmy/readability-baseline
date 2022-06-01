@@ -8,7 +8,7 @@ import csv
 
 class ThetelegraphPipeline(object):
     def open_spider(self, spider):
-        self.file = open(r'C:\Projects\Danny\TheTelegraph\Telegraph.csv', 'w')
+        self.file = open(r'FILE.csv', 'w')
         self.file_writer = csv.writer(self.file)
 
     def close_spider(self, spider):
