@@ -80,5 +80,6 @@ def is_passive(tagger, sent):
     tagged = tagger.tag_sentence(sent)
     tags = map(lambda tup: tup[1], tagged)
     return bool(passivep(tags))
+
 if __name__ == '__main__':
     tagger = Tagger()
