@@ -1,0 +1,2 @@
+Some studies claims that concrete words are easier to understand than abstract ones.
+I first extract all nouns from my dataset and than calculate for each word the level of abstractness / concreteness. 
