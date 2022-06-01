@@ -3,7 +3,6 @@ from nltk.corpus import wordnet as wn
 from joblib import Parallel, delayed
 import spacy 
 nlp = spacy.load("en_core_web_md", disable=["tok2vec", "parser", "attribute_ruler", "lemmatizer","ner"])
-# https://prrao87.github.io/blog/spacy/nlp/performance/2020/05/02/spacy-multiprocess.html
 
 def remove_short(txt):
     return " ".join(word for word in txt.split() if len(word)>1)
